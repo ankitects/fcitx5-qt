@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.3)
 project(fcitx5-qt VERSION 5.0.8)
 set(FCITX5_QT_VERSION ${PROJECT_VERSION})
 
@@ -10,7 +10,7 @@ find_package(ECM 1.4.0 REQUIRED)
 
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-option(ENABLE_QT4 "Enable Qt 4" On)
+option(ENABLE_QT4 "Enable Qt 4" Off)
 option(ENABLE_QT5 "Enable Qt 5" On)
 option(ENABLE_QT6 "Enable Qt 6" Off)
 option(BUILD_ONLY_PLUGIN "Build only plugin" Off)
